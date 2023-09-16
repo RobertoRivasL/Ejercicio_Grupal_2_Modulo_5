@@ -88,3 +88,20 @@ archivo de estilos.
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
 
+Aplicación web Java que utiliza servlets para el registro de usuarios, el inicio de sesión y otras funciones.
+
+svRegister.java : este servlet parece manejar el registro de usuarios. Extrae el nombre de usuario y la contraseña de los parámetros de la solicitud, crea un nuevo Usuarioobjeto, lo agrega al archivo Contenedor.listaUsuarioy luego reenvía la solicitud a la página de inicio de sesión. Es importante validar la entrada del usuario y manejar posibles excepciones o errores en una aplicación de producción.
+
+svLogout.java : este servlet maneja el cierre de sesión del usuario. Elimina el usuarioConectadoatributo de la sesión y redirige al usuario a la página de inicio de sesión. Es una buena práctica asegurarse de que la sesión se invalide para mejorar la seguridad.
+
+svLogin.java : este servlet maneja el inicio de sesión del usuario. Comprueba si el nombre de usuario y la contraseña proporcionados coinciden con alguna entrada del archivo Contenedor.listaUsuario. Si se encuentra una coincidencia, establece el usuarioConectadoatributo true y reenvía al usuario a la página "inicio.jsp"; de lo contrario, configura usuarioConectadoy falsereenvía al usuario a la página de inicio de sesión.
+
+svInicio.java : este servlet no parece tener un propósito específico en el código proporcionado. Simplemente muestra un mensaje que indica que es "Presentado en: [ruta de contexto]". Es posible que desee agregar funcionalidad a este servlet si pretende hacer algo específico.
+
+svContacto.java : este servlet maneja el envío de un formulario de contacto. Extrae el nombre, el correo electrónico y el mensaje del usuario, los establece como atributos de solicitud y reenvía la solicitud a una página "contacto.jsp". Asegúrese de validar y desinfectar adecuadamente las entradas de los usuarios para evitar vulnerabilidades de seguridad.
+
+SvCapacitacion.java : este servlet parece manejar el envío de un formulario relacionado con "Capacitacion". Crea un nuevo Capacitacionobjeto y lo agrega a Contenedor.listaCapacitacion. Al igual que en el Servlet anterior, la validación de la entrada es crucial aquí.
+
+Modelos : el código define varias clases que representan modelos de datos como Usuario, Contactoy Capacitacion. Estas clases contienen los datos utilizados en su aplicación. Es bueno tener clases de modelos separadas para una mejor organización.
+
+En general, su código demuestra el uso de Servlets para manejar diferentes aspectos de una aplicación web. Sin embargo, es importante considerar aspectos de seguridad como la validación de entradas, el hash de contraseñas y la gestión de sesiones para garantizar que la aplicación sea sólida y segura.
