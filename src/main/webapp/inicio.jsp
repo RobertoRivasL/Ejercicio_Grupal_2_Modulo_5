@@ -1,0 +1,33 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Ganon
+  Date: 13-07-2023
+  Time: 19:49
+  To change this template use File | Settings | File Templates.
+--%>
+<%@include file="navbar.jsp" %>
+<%@include file="footer.jsp" %>
+<html>
+
+<body>
+
+<h1 class="text-center">Inicio</h1>
+
+<div class="jumbotron">
+    <h1 class="display-4 text-center">Somos una empresa de asesorias en prevencion de riesgos</h1>
+    <div class="text-center">
+        <img src="https://preventiam.com/wp-content/uploads/2019/09/tecnicas-prevencion-riesgos-laborales.jpg"
+             class="card-img-top" alt="..." style="max-width: 50%">
+        <p class="fs-4 text-center">Somos un grupo de profesionales miembros del grupo empresarial, <br>
+            estamos al servicio de nuestros clientes para brindar soluciones en Prevencion de Riesgos Laborales.<br>
+            Nuestro servicio consiste en diagnosticar, planificar, ejecutar y supervisar la gestion en prevencion de
+            riesgos.</p>
+    </div>
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</html>
